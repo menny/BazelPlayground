@@ -4,7 +4,8 @@ android_binary(
         resource_files = glob(["src/main/res/**"]),
         custom_package = "net.evendanan.bazelplayground",
         manifest = "src/main/AndroidManifest.xml",
-        deps = ["@androidsdk//:appcompat_v7", "@androidsdk//:appcompat_v7_import",
+        deps = ["//javalib",
+                "@androidsdk//:appcompat_v7", "@androidsdk//:appcompat_v7_import",
                 "@android-support-design//:jar", "@android-support-design//:lib",],
         visibility = ["//visibility:public"]
 )

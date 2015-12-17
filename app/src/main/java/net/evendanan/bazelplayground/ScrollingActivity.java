@@ -22,7 +22,7 @@ public class ScrollingActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Name of java lib is "+net.evendanan.bazelplayground.javalib.Util.getLibName(), Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
