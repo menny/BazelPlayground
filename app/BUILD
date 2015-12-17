@@ -5,7 +5,8 @@ android_binary(
         custom_package = "net.evendanan.bazelplayground",
         manifest = "src/main/AndroidManifest.xml",
         deps = ["//javalib",
-                "@androidsdk//:appcompat_v7", "@androidsdk//:appcompat_v7_import",
+                "@android-support-v4//:jar", "@android-support-v4//:lib",
+                "@android-appcompat-v7//:jar", "@android-appcompat-v7//:lib",
                 "@android-support-design//:jar", "@android-support-design//:lib",],
         visibility = ["//visibility:public"]
 )

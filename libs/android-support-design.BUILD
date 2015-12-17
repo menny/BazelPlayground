@@ -5,12 +5,12 @@ android_library (
   resource_files = glob(["res/**"]),
   visibility = ["//visibility:public"],
   deps = ["jar",
-    "@androidsdk//:appcompat_v7",
-    "@androidsdk//:appcompat_v4",]
+    "@android-appcompat-v7//:lib", "@android-appcompat-v7//:jar",
+    "@android-support-v4//:lib", "@android-support-v4//:jar"]
 )
 
 java_import (
   name = "jar",
   jars = ["classes.jar"],
-  visibility = ["//visibility:public"],
+  visibility = ["//visibility:public"]
 )

@@ -21,7 +21,25 @@ android_ndk_repository(
 
 #since support libraries are not published in Maven Central or jCenter, we'll have a local copy
 new_local_repository(
+   name = "android-support-v4",
+   path = "/Users/menny/dev/menny/BazelPlayground/libs/support-v4",
+   build_file = "libs/android-support-v4.BUILD"
+)
+
+new_local_repository(
+   name = "android-appcompat-v7",
+   path = "/Users/menny/dev/menny/BazelPlayground/libs/appcompat-v7",
+   build_file = "libs/android-appcompat-v7.BUILD"
+)
+
+new_local_repository(
    name = "android-support-design",
    path = "/Users/menny/dev/menny/BazelPlayground/libs/support-design",
    build_file = "libs/android-support-design.BUILD"
+)
+
+new_local_repository(
+   name = "android-support-annotations",
+   path = "/Users/menny/dev/menny/BazelPlayground/libs",
+   build_file = "libs/android-support-annotations.BUILD"
 )
