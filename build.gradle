@@ -12,6 +12,13 @@ buildscript {
     }
 }
 
+//changing the build output folder of Gradle to be something different than BUILD
+//so case-insensitive filesystems (Windows and MacOSX) will allow Bazel's BUILD
+buildDir = 'gen_build'
+allprojects {
+    buildDir 'gen_build'
+}
+
 allprojects {
     repositories {
         jcenter()
