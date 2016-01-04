@@ -22,6 +22,6 @@ android_ndk_repository(
 #since support libraries are not published in Maven Central or jCenter, we'll have a local copy
 new_local_repository(
    name = "android-support-design",
-   path = "/Users/menny/dev/menny/BazelPlayground/libs/support-design",
+   path = __workspace_dir__+"/libs/support-design",
    build_file = "libs/android-support-design.BUILD"
 )
