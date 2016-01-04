@@ -7,6 +7,7 @@ android_binary(
         deps = ["//javalib",
                 "@android-support-v4//:jar", "@android-support-v4//:lib",
                 "@android-appcompat-v7//:jar", "@android-appcompat-v7//:lib",
-                "@android-support-design//:jar", "@android-support-design//:lib",],
+                "@android-support-design//:jar", "@android-support-design//:lib",
+                "@androidsdk//:appcompat_v4"],
         visibility = ["//visibility:public"]
 )
