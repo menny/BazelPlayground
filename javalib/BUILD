@@ -3,5 +3,6 @@ java_library(
     srcs = glob(["src/main/java/**/*.java"]),
     deps = [],
     visibility = ["//visibility:public"],
-    javacopts = ["-source 7", "-target 7"]
+    #removing this to allow lambdas
+    #javacopts = ["-source 7", "-target 7"]
 )

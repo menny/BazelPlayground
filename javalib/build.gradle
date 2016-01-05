@@ -1,9 +1,21 @@
 apply plugin: 'java'
+apply plugin: 'me.tatarka.retrolambda'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:3.2.4'
+    }
+}
 
 compileJava {
-    sourceCompatibility = "1.6"
-    targetCompatibility = "1.6"
+    sourceCompatibility = "1.8"
+    targetCompatibility = "1.8"
 }
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

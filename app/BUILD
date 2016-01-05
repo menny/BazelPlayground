@@ -8,5 +8,6 @@ android_binary(
                 "@android-support-v4//:jar", "@android-support-v4//:lib","@android-support-v4//:internal_jar",
                 "@android-appcompat-v7//:jar", "@android-appcompat-v7//:lib",
                 "@android-support-design//:jar", "@android-support-design//:lib",],
-        visibility = ["//visibility:public"]
+        visibility = ["//visibility:public"],
+        javacopts = ["-source 8", "-target 8"]
 )
