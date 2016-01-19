@@ -4,7 +4,7 @@ android_binary(
         resource_files = glob(["src/main/res/**"]),
         custom_package = "net.evendanan.bazelplayground",
         manifest = "src/main/AndroidManifest.xml",
-        deps = ["//javalib",
+        deps = ["//javalib", "//rewrite-lib",
                 "@android-support-v4//:jar", "@android-support-v4//:lib","@android-support-v4//:internal_jar",
                 "@android-appcompat-v7//:jar", "@android-appcompat-v7//:lib",
                 "@android-support-design//:jar", "@android-support-design//:lib",],
