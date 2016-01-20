@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="net.evendanan.lib_with_resource">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <meta-data
+            android:name="some.version"
+            android:value="@integer/some_version"/>
+
+    </application>
+
+</manifest>
