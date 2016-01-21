@@ -4,7 +4,7 @@ android_library (
   manifest = "AndroidManifest.xml",
   resource_files = glob(["res/**"]),
   visibility = ["//visibility:public"],
-  deps = ["jar",
+  exports = ["jar",
     "@android-support-v4//:lib", "@android-support-v4//:jar",]
 )
 

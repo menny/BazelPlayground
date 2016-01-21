@@ -43,3 +43,16 @@ new_local_repository(
    path = __workspace_dir__+"/libs",
    build_file = "libs/android-support-annotations.BUILD"
 )
+
+
+#new_local_repository(
+#   name = "google-play-services-basement",
+#   path = __workspace_dir__+"/libs/play-services-basement-8.4.0",
+#   build_file = "libs/google-play-services-basement.BUILD"
+#)
+
+#new_local_repository(
+#   name = "google-play-services-base",
+#   path = __workspace_dir__+"/libs/play-services-base-8.4.0",
+#   build_file = "libs/google-play-services-base.BUILD"
+#)

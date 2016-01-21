@@ -4,7 +4,7 @@ android_library (
   manifest = "AndroidManifest.xml",
   resource_files = glob(["res/**"]),
   visibility = ["//visibility:public"],
-  deps = ["jar", "internal_jar", "@android-support-annotations//:jar"]
+  exports = ["jar", "internal_jar", "@android-support-annotations//:jar"]
 )
 
 java_import (
