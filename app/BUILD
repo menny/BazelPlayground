@@ -1,7 +1,8 @@
 android_binary(
         name = "app",
         srcs = glob(["src/main/java/**/*.java"]),
-        resource_files = glob(["src/main/res/**"]),
+        resource_files = glob(include=["src/main/res/**"], exclude=["src/main/res/xml/config_something.xml"]) +
+                        glob(include=["src/debug/res/xml/config_something.xml"]),
         custom_package = "net.evendanan.bazelplayground",
         manifest = "src/main/AndroidManifest.xml",
         deps = ["//javalib",
