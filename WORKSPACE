@@ -21,27 +21,27 @@ android_ndk_repository(
 
 #since support libraries are not published in Maven Central or jCenter, we'll have a local copy
 new_local_repository(
-   name = "android-support-v4",
+   name = "android_support_v4",
    path = __workspace_dir__+"/libs/support-v4",
-   build_file = "libs/android-support-v4.BUILD"
+   build_file = "libs/android_support_v4.BUILD"
 )
 
 new_local_repository(
-   name = "android-appcompat-v7",
+   name = "android_appcompat_v7",
    path = __workspace_dir__+"/libs/appcompat-v7",
-   build_file = "libs/android-appcompat-v7.BUILD"
+   build_file = "libs/android_appcompat_v7.BUILD"
 )
 
 new_local_repository(
-   name = "android-support-design",
+   name = "android_support_design",
    path = __workspace_dir__+"/libs/support-design",
-   build_file = "libs/android-support-design.BUILD"
+   build_file = "libs/android_support_design.BUILD"
 )
 
 new_local_repository(
-   name = "android-support-annotations",
+   name = "android_support_annotations",
    path = __workspace_dir__+"/libs",
-   build_file = "libs/android-support-annotations.BUILD"
+   build_file = "libs/android_support_annotations.BUILD"
 )
 
 

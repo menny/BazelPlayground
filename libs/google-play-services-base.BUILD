@@ -5,7 +5,7 @@ android_library (
   resource_files = glob(["res/**"]),
   visibility = ["//visibility:public"],
   exports = ["jar",
-    "@android-support-v4//:lib",
+    "@android_support_v4//:lib",
     "@google-play-services-basement//:lib", ]
 )
 

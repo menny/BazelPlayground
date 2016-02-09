@@ -5,8 +5,8 @@ android_library (
   resource_files = glob(["res/**"]),
   visibility = ["//visibility:public"],
   exports = ["jar",
-    "@android-appcompat-v7//:lib", "@android-appcompat-v7//:jar",
-    "@android-support-v4//:lib", "@android-support-v4//:jar"]
+    "@android_appcompat_v7//:lib", "@android_appcompat_v7//:jar",
+    "@android_support_v4//:lib", "@android_support_v4//:jar"]
 )
 
 java_import (
